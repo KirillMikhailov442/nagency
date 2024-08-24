@@ -1,0 +1,143 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.footer {
+  padding-block: 2rem;
+}
+
+.container {
+  @include container(true);
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.bottom {
+  color: var(--black);
+  margin-top: auto;
+}
+
+.mobileCopy {
+  color: var(--black);
+  display: none;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.list {
+  margin-top: 1.9rem;
+  &Link {
+    padding: 0.5rem;
+  }
+
+  &Item {
+    margin-block: 0.5rem;
+  }
+}
+
+.info,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.info > .text {
+  margin-top: 1.9rem;
+}
+
+.info {
+  padding-right: 6%;
+  flex-basis: 50%;
+}
+
+.newsletter > .bottom {
+  display: flex;
+  gap: 2rem;
+  text-wrap: nowrap;
+}
+
+.socialMedia {
+  color: var(--grey);
+  display: flex;
+  gap: 2rem;
+}
+
+.column {
+  flex-basis: 16%;
+
+  &:first-child {
+    flex-basis: 40%;
+  }
+
+  &:last-child {
+    flex-basis: 20%;
+  }
+}
+
+.form {
+  display: flex;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: 1.1rem;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--secondary-color);
+  border-radius: 0px 5px 5px 0px;
+  padding-inline: 0.7rem;
+  color: white;
+  flex-basis: 35%;
+}
+
+.input {
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  border-color: #ededed;
+  flex-basis: 65%;
+  padding-inline: 0.7rem;
+  background-color: transparent;
+}
+
+@media (max-width: $tablet) {
+  .container {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .column {
+    flex-basis: 46%;
+  }
+
+  .info {
+    flex-basis: 100%;
+  }
+
+  .newsletter {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+
+  .copy {
+    display: none;
+  }
+
+  .mobileCopy {
+    display: block;
+  }
+
+  .bottom {
+    margin-top: 2rem;
+  }
+
+  .newsletter .text {
+    padding-right: 20%;
+  }
+}

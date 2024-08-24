@@ -1,0 +1,55 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 6rem 4rem;
+  position: relative;
+}
+
+.container {
+  @include container(true);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.content {
+  flex-basis: 55%;
+}
+
+.accordionWrapper {
+  margin-top: 2rem;
+}
+
+.images {
+  display: flex;
+  gap: 9px;
+  position: absolute;
+  right: 0;
+
+  & > img {
+    border-radius: 20px;
+  }
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+@media (max-width: $laptopL) {
+  .images {
+    display: none;
+  }
+
+  .content {
+    flex-basis: 100%;
+  }
+
+  .container {
+    max-width: $tablet;
+  }
+
+  .section {
+    min-height: auto !important;
+  }
+}

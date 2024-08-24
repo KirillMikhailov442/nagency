@@ -1,0 +1,38 @@
+.button {
+  height: 45px;
+  padding-inline: 1rem;
+  border-radius: 5px;
+  transition: filter 0.5s ease;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.blue {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.pink {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.white {
+  background-color: none;
+  color: var(--black);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.big {
+  font-size: 14px;
+  height: 54px;
+  padding-inline: 1.6rem;
+}

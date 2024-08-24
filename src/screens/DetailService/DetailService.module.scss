@@ -1,0 +1,18 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.main {
+  @include container(true);
+  display: flex;
+  gap: 6.5rem;
+}
+
+@media (max-width: $laptop) {
+  .main {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,57 @@
+.card {
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.container {
+  padding: 1.6rem 2rem;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.category {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.price {
+  margin-top: 1.4rem;
+
+  &Number {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+}
+
+.line {
+  color: #e5eaf1;
+}
+
+.list {
+  margin-block: 0.9rem 2.2rem;
+
+  &Item {
+    margin-bottom: 16px;
+  }
+}
+
+.button {
+  width: 70%;
+}
+
+.pink {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.outline {
+  border: 1px solid #e5eaf1;
+}
+
+.blackText {
+  color: var(--black);
+}

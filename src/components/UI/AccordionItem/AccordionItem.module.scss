@@ -1,0 +1,18 @@
+.accordion {
+  border-bottom: 1px solid #e5eaf1;
+
+  &Label {
+    font-weight: 700;
+    color: var(--black);
+    padding-block: 1.2rem;
+  }
+}
+
+.arrow {
+  margin-right: 1rem;
+  transition: rotate 0.5s ease;
+}
+
+.active {
+  rotate: -180deg;
+}

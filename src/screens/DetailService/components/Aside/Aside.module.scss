@@ -1,0 +1,31 @@
+@import '@styles/vars.scss';
+
+.aside {
+  flex-basis: 290px;
+  flex-shrink: 0;
+}
+
+.content {
+  position: sticky;
+  top: calc($headerHeight + 20px);
+}
+
+.title {
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: $laptop) {
+  .aside {
+    width: 50%;
+  }
+
+  .content {
+    position: static;
+  }
+}
+
+@media (max-width: $tablet) {
+  .aside {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+@import '@styles/mixins.scss';
+
+.section {
+  margin-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  padding-right: 10%;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.heading {
+  margin-block: 55px 16px;
+}
+
+.list {
+  list-style-position: inside;
+  & li {
+    list-style-type: circle;
+  }
+}

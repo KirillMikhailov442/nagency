@@ -1,0 +1,44 @@
+@import '@styles/vars.scss';
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.image {
+  flex-basis: 40%;
+}
+
+.content {
+  flex-basis: 45%;
+}
+
+.content {
+  text-align: start;
+}
+
+.title {
+  margin-block: 0.8rem 1.2rem;
+  display: block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: $tablet) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .content {
+    order: 2;
+    padding-right: 20%;
+  }
+
+  .image {
+    order: 1;
+  }
+}

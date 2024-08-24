@@ -1,0 +1,76 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 32px;
+  padding: 4rem 6.2rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: $layer2;
+}
+
+.content {
+  flex-basis: 62%;
+  position: relative;
+  z-index: $layer3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-block: 0.9rem 0.6rem;
+  color: white;
+}
+
+.text {
+  margin-inline: 3.5rem;
+}
+
+.button {
+  display: block;
+  margin-top: 0.9rem;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: $laptop) {
+  .image {
+    display: none;
+  }
+
+  .section {
+    margin-inline: 1.2rem;
+  }
+
+  .content {
+    flex-basis: 100%;
+  }
+
+  .container {
+    padding: 2rem 4rem;
+  }
+
+  .circle {
+    width: 65%;
+  }
+}

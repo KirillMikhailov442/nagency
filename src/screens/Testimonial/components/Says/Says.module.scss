@@ -1,0 +1,49 @@
+@import '@styles/mixins.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.title {
+  margin-right: 25%;
+  margin-bottom: 3.6rem;
+}
+
+.carousel {
+  @include container(true);
+  max-width: 1500px;
+  position: relative;
+  padding-bottom: 3.2rem;
+}
+
+.dot {
+  cursor: pointer;
+  background-color: #a8e6f5;
+  border-radius: 3px;
+  height: 6px;
+  width: 30px;
+  margin-inline: 8px;
+  display: inline;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+
+  &List {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &Active {
+    background-color: var(--primary-color);
+  }
+}

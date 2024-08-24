@@ -1,0 +1,18 @@
+.wrapper {
+  display: block;
+}
+
+.input {
+  height: 48px;
+  padding-inline: 1.2rem;
+  color: var(--black);
+  border: 1px solid #ededed;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+
+  &::placeholder {
+    color: var(--grey);
+  }
+}

@@ -1,0 +1,43 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  text-align: center;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 4rem;
+}
+
+.card {
+  flex-basis: 30%;
+}
+
+@media (max-width: $laptop) {
+  .card {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .card {
+    flex-basis: 90%;
+  }
+
+  .list {
+    gap: 60px;
+  }
+}

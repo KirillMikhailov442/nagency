@@ -1,0 +1,29 @@
+.wrapper {
+  font-size: 14px;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.zone {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px dashed var(--grey);
+  color: var(--grey);
+  text-align: center;
+}
+
+.image {
+  color: #ededed;
+}
+
+.text {
+  line-height: 2;
+  & > span {
+    color: var(--primary-color);
+  }
+}

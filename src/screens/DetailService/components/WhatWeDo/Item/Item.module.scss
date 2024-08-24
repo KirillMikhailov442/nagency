@@ -1,0 +1,25 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.card {
+  padding-inline: 3rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #e5eaf1;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.image {
+  background-color: #fef4f6;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.title {
+  margin-block: 4.2rem 0.8rem;
+}

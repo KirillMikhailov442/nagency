@@ -1,0 +1,92 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  margin-inline: 1.2rem;
+}
+
+.contact {
+  @include container(true);
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2.8rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.2rem 1rem;
+  margin-block: 100px;
+}
+
+.info {
+  flex-basis: 45%;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.title {
+  margin-block: 0.8rem 2.2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1.7rem;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.icon {
+  display: block;
+  color: var(--secondary-color);
+  background-color: #fef4f6;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.form {
+  flex-basis: 46%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+
+  & > label {
+    flex-grow: 1;
+  }
+}
+
+.textarea {
+  flex-grow: 1;
+  min-height: 140px;
+}
+
+.button {
+  align-self: flex-start;
+  padding-inline: 52px;
+}
+
+@media (max-width: $laptop) {
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  .info,
+  .form {
+    flex-basis: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    background-color: var(--grey-light);
+  }
+}

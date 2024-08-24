@@ -1,0 +1,79 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.section {
+  padding-block: 8rem 4rem;
+  overflow: hidden;
+}
+
+.container {
+  @include container(true);
+  max-width: 1500px;
+  display: flex;
+  align-items: start;
+}
+
+.content {
+  flex-basis: 45%;
+}
+
+.cards {
+  flex-basis: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  transform: rotate(5deg);
+  position: relative;
+  right: -20%;
+  flex-shrink: 0;
+}
+
+.cardWrapper {
+  padding: 20px;
+
+  &Bottom {
+    padding: 20px 20px 0px 20px;
+    margin-top: auto;
+  }
+}
+
+.comment {
+  display: flex;
+  margin-top: 1.5rem;
+
+  &Content {
+    margin-left: 1rem;
+  }
+}
+
+.text {
+  margin-block: 1rem 1.5rem;
+}
+
+.rating {
+  display: flex;
+  color: var(--yellow);
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.bottom {
+  margin-top: 4rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    display: none;
+  }
+
+  .content {
+    flex-basis: 100%;
+  }
+
+  .section {
+    padding-block: 4rem;
+  }
+}

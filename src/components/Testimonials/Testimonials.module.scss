@@ -1,0 +1,61 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+.container {
+  @include container(true);
+  text-align: center;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.marquee {
+  margin-top: 1.5rem;
+
+  &Content {
+    padding-block: 2rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &Row {
+    display: flex;
+    gap: 1.5rem;
+    margin-inline: 0.7rem;
+
+    &:first-child > div {
+      position: relative;
+      right: -150px;
+    }
+  }
+}
+
+.light {
+  display: block;
+}
+
+.dark {
+  display: none;
+}
+
+@media (max-width: $laptopL) {
+  .marqueeContent {
+    width: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .light {
+    display: none !important;
+  }
+
+  .dark {
+    display: block;
+  }
+}

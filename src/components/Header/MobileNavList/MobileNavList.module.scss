@@ -1,0 +1,86 @@
+@import '@styles/vars.scss';
+
+.wrapper {
+  pointer-events: none;
+  width: 100vw;
+  height: calc(100dvh - $headerHeight);
+  position: fixed;
+  z-index: $layer3;
+  bottom: 0;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  display: none;
+
+  &ShowNav {
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: all;
+  }
+}
+
+.nav {
+  background-color: var(--white);
+  height: 100%;
+  width: 70%;
+  position: relative;
+  float: right;
+  right: -100%;
+  transition: right 0.5s ease;
+  pointer-events: all;
+  padding: 20px;
+
+  &Active {
+    right: 0;
+  }
+}
+
+.list {
+  overflow-y: scroll;
+  height: 100%;
+  scrollbar-width: none;
+
+  &Item {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  &Link {
+    padding: 10px;
+    transition: color 0.5s ease;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    display: block;
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+.button {
+  font-size: 1.8rem !important;
+  width: 70%;
+  height: 70px;
+  margin-block: 30px;
+}
+
+@media (max-width: $laptop) {
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet) {
+  .wrapper {
+    height: calc((100dvh - 70px));
+  }
+}
+
+@media (max-width: $mobileL) {
+  .nav {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

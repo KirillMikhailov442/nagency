@@ -1,0 +1,12 @@
+.textarea {
+  color: var(--black);
+  border: 1px solid #ededed;
+  font-size: 14px;
+  resize: none;
+  padding: 1.2rem;
+  background-color: transparent;
+
+  &::placeholder {
+    color: var(--grey);
+  }
+}

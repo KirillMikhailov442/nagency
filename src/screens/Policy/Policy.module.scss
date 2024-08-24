@@ -1,0 +1,27 @@
+@import '@styles/mixins.scss';
+
+.section {
+  margin-block: 4rem 8rem;
+}
+
+.container {
+  @include container(true);
+  padding-right: 10%;
+}
+
+.title {
+  margin-block: 64px 28px;
+}
+
+.heading {
+  margin-block: 45px 24px;
+}
+
+.list {
+  list-style-position: inside;
+  & li {
+    list-style-type: circle;
+    list-style-image: url('../../assets/icons/base/check.png');
+    margin-block: 1rem;
+  }
+}

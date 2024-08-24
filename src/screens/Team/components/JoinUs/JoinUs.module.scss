@@ -1,0 +1,24 @@
+@import '@styles/mixins.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

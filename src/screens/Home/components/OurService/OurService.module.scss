@@ -1,0 +1,9 @@
+@import '@styles/vars.scss';
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 4rem;
+}

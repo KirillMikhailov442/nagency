@@ -1,0 +1,50 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.content {
+  flex-basis: 60%;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.title {
+  margin-block: 0.8rem 1rem;
+}
+
+.facts {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40%;
+  margin-block: 2rem;
+
+  & h5 {
+    color: var(--primary-color);
+  }
+}
+
+.image {
+  flex-basis: 40%;
+}
+
+@media (max-width: $laptop) {
+  .content {
+    flex-basis: 100%;
+  }
+
+  .image {
+    display: none;
+  }
+}

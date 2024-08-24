@@ -1,0 +1,105 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.header {
+  height: $headerHeight;
+  position: fixed;
+  top: 0;
+  z-index: $layer4;
+  width: 100%;
+  transition: background-color 0.2s ease;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.showBg {
+  background-color: var(--white);
+}
+
+.container {
+  @include container(true);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  font-size: 16px;
+
+  & a {
+    display: block;
+    width: 100%;
+  }
+
+  &Item {
+    color: var(--grey);
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--black);
+    }
+  }
+
+  &Link {
+    padding: 8px 10px;
+  }
+}
+
+.menuList {
+  background-color: var(--grey-light);
+}
+
+.menuList > * {
+  background-color: var(--grey-light);
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+.active {
+  color: var(--black);
+}
+
+.button {
+  text-wrap: wrap;
+}
+
+.hamburger {
+  display: none;
+}
+
+.changeColorMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.5s ease;
+  color: var(--grey);
+
+  &:hover {
+    color: var(--black);
+  }
+}
+
+@media (max-width: $laptop) {
+  .nav {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet) {
+  .header {
+    height: calc($headerHeight - 30px);
+  }
+}

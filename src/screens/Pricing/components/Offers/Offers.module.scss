@@ -1,0 +1,20 @@
+@import '@styles/vars.scss';
+
+.cards {
+  display: flex;
+  gap: 40px 24px;
+}
+
+.section > div {
+  max-width: 1100px;
+}
+
+.section > div > header > h2 {
+  margin-inline: 22%;
+}
+
+@media (max-width: $laptop) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}

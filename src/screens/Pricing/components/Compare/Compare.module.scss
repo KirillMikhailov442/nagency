@@ -1,0 +1,89 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  margin-block: 4rem;
+}
+
+.topbar {
+  @include container(true);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.content {
+  @include container(true);
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & > div {
+    width: 1150px;
+    padding: none;
+    margin: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.list {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.table {
+  width: 100%;
+  & caption {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+
+  & th {
+    text-align: left;
+    padding-block: 30px 16px;
+    border-right: 1px solid #d4d4d8;
+  }
+
+  & tr {
+    border-top: 1px solid #d4d4d8;
+    border-bottom: 1px solid #d4d4d8;
+  }
+
+  & td {
+    width: 16%;
+    border-left: 1px solid #d4d4d8;
+    text-align: center;
+    padding: 15px;
+  }
+
+  & td:first-child {
+    width: 48%;
+    border-left: none;
+    text-align: left;
+    padding: 15px 15px 15px 0px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .content > div {
+    width: 700px;
+  }
+}

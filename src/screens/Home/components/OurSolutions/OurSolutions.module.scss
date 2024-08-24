@@ -1,0 +1,16 @@
+@import '@styles/vars.scss';
+
+.list {
+  display: flex;
+  margin-top: 3rem;
+  border-radius: 10px;
+  border: 1px solid #e5eaf1;
+  padding-block: 2.5rem;
+  row-gap: 2.5rem;
+}
+
+@media (max-width: $tablet) {
+  .list {
+    flex-wrap: wrap;
+  }
+}

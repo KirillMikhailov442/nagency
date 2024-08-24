@@ -1,0 +1,39 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  max-width: 850px;
+  text-align: center;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonStart {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+@media (max-width: $tablet) {
+  .video {
+    width: 100%;
+  }
+}

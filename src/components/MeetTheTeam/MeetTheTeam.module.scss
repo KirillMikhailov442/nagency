@@ -1,0 +1,31 @@
+@import '@styles/mixins.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.container {
+  @include container(true);
+  max-width: 1300px;
+}
+
+.cards {
+  display: flex;
+  margin-top: 2rem;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &List {
+    display: flex;
+    gap: 20px;
+    padding-block: 2rem;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,46 @@
+@import '@styles/vars.scss';
+
+.wrapper {
+  flex-basis: 30%;
+}
+
+.card {
+  padding: 25px 35px;
+  text-align: start;
+  border: 1px solid #e5eaf1;
+  border-radius: 10px;
+
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+  }
+}
+
+.icon {
+  margin-bottom: 3.6rem;
+}
+
+.text {
+  margin-block: 0.6rem 0.9rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  gap: 12px;
+  padding: 0.7rem;
+  margin-right: auto;
+}
+
+@media (max-width: $laptop) {
+  .wrapper {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .wrapper {
+    flex-basis: 100%;
+  }
+}

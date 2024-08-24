@@ -1,0 +1,40 @@
+.wrapper {
+  margin-bottom: 1.2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1.2rem;
+  font-size: 16px;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: var(--black);
+  }
+}
+
+.active {
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: none;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .item {
+    box-shadow: none;
+    background-color: var(--grey-light);
+  }
+
+  .active {
+    background-color: var(--secondary-color);
+  }
+}

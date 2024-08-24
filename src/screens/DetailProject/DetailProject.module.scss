@@ -1,0 +1,90 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  display: flex;
+  gap: 3.6rem;
+}
+
+.aside {
+  flex-shrink: 0;
+  flex-basis: 340px;
+
+  &Content {
+    padding: 2.8rem 1.8rem;
+    border-radius: 10px;
+    background-color: var(--grey-light);
+    position: sticky;
+    top: calc($headerHeight + 20px);
+
+    & p {
+      font-size: 14px;
+    }
+  }
+}
+
+.item {
+  margin-bottom: 1.8rem;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0.6rem 2.6rem;
+  gap: 30px;
+}
+
+.image {
+  margin-block: 3rem;
+}
+
+.visitWeb > h5 {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-wrap: nowrap;
+}
+
+.heading {
+  margin-bottom: 0.6rem;
+}
+
+.text {
+  margin-block: 0.6rem;
+}
+
+.title {
+  font-size: 2.6rem;
+}
+
+@media (max-width: $laptop) {
+  .container {
+    flex-direction: column;
+  }
+
+  .aside {
+    position: static;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+}

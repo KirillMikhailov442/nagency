@@ -1,0 +1,29 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+  text-align: center;
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  margin-top: 2rem;
+}
+
+@media (max-width: $mobileL) {
+  .list {
+    justify-content: center;
+  }
+}

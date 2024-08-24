@@ -1,0 +1,41 @@
+@import '@styles/mixins.scss';
+@import '@styles/vars.scss';
+
+.wrapper {
+  padding-block: 4rem;
+  margin-inline: 1.2rem;
+}
+
+.container {
+  @include container(true);
+  display: flex;
+  justify-content: space-around;
+  background-color: #fef3f5;
+  border-radius: 32px;
+  padding: 3.8rem;
+  gap: 30px;
+}
+
+.item {
+  text-align: center;
+}
+
+.number {
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: $tablet) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    flex-basis: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: var(--grey-light);
+  }
+}

@@ -1,0 +1,26 @@
+@import '@styles/vars.scss';
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0.8rem 1.3rem;
+  border-radius: 10px;
+  background-color: #fef3f5;
+}
+
+.image {
+  flex-shrink: 0;
+}
+
+@media (max-width: $mobileL) {
+  .item {
+    flex-basis: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .item {
+    background-color: var(--grey-light);
+  }
+}

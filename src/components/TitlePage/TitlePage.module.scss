@@ -1,0 +1,32 @@
+@import '@styles/mixins.scss';
+
+.section {
+  padding-block: 8rem 4rem;
+  background-color: var(--grey-light);
+}
+
+.container {
+  @include container(true);
+  text-align: center;
+}
+
+.title {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.breadcrumb {
+  color: var(--grey);
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.pageName::first-letter {
+  text-transform: uppercase;
+}
+
+.link::first-letter {
+  text-transform: uppercase;
+}

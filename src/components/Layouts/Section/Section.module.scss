@@ -1,0 +1,18 @@
+@import '@styles/mixins.scss';
+
+.section {
+  padding-block: 4rem;
+}
+
+.container {
+  @include container(true);
+}
+
+.description {
+  color: var(--secondary-color);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
