@@ -27,7 +27,6 @@ const FAQScreen: FC = () => {
           <AccordionItem
             label="Lorem ipsum dolor sit amet, consect etur adipiscing elit "
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, tempor for the main condimentum commodo tincidunt sit dictumst. Eu placerat to a arcu at sem vitae eros, purus nonprofit organizations."
-            open
           />
           <AccordionItem
             label="Lorem ipsum dolor sit amet, consect etur adipiscing elit "
@@ -57,7 +56,7 @@ const FAQScreen: FC = () => {
             label="Lorem ipsum dolor sit amet, consect etur adipiscing elit "
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, tempor for the main condimentum commodo tincidunt sit dictumst. Eu placerat to a arcu at sem vitae eros, purus nonprofit organizations."
           />
-          <Accordion
+          <AccordionItem
             label="Lorem ipsum dolor sit amet, consect etur adipiscing elit "
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, tempor for the main condimentum commodo tincidunt sit dictumst. Eu placerat to a arcu at sem vitae eros, purus nonprofit organizations."
           />

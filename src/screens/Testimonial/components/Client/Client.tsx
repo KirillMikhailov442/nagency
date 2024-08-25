@@ -30,7 +30,7 @@ const Client: FC<ClientProps> = ({
         alt="client-img"
       />
       <div className={styles.content}>
-        <h3 className={styles.quote}>"{quote}"</h3>
+        <h3 className={styles.quote}>&quote;{quote}&quote;</h3>
         <p className={styles.text}>{text}</p>
         <footer className={styles.footer}>
           <div>

@@ -16,8 +16,8 @@ const CEO: FC = () => {
         />
         <div className={styles.content}>
           <h2>
-            “Maximize Your Reach with Marketing - Unlock Your Business's Growth
-            Potential!"
+            &quot; Maximize Your Reach with Marketing - Unlock Your
+            Business&apos;s Growth Potential! &quot;
           </h2>
           <p className={styles.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

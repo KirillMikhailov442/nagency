@@ -17,8 +17,9 @@ const TitlePage: FC<TitlePageProps> = ({
   isBreadcrumb = true,
   ...props
 }) => {
-  const [title] = useState(titlePage ?? usePathname().substring(1));
-  const [pathName] = useState(pathNamePage ?? usePathname().substring(1));
+  const path = usePathname().substring(1);
+  const [title] = useState(titlePage ?? path);
+  const [pathName] = useState(pathNamePage ?? path);
 
   return (
     <section className={styles.section} {...props}>
