@@ -18,37 +18,37 @@ const OurService: FC = () => {
           icon={icon_chart}
           title="Consultant Plan"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-          href="/consultant"
+          href="/service/consultant+planning"
         />
         <Item
           icon={icon_graph}
           title="Design Thingking"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-          href="/consultant"
+          href="/service/designt+thingking"
         />
         <Item
           icon={icon_filter}
           title="SEO Marketing"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-          href="/consultant"
+          href="/service/seo+marketing"
         />
         <Item
           icon={icon_work}
           title="Business Advisor"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-          href="/consultant"
+          href="/service/business+advisor"
         />
         <Item
           icon={icon_heart}
           title="Brand Personal"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-          href="/consultant"
+          href="service/brand+personal"
         />
         <Item
           icon={icon_activity}
           title="Development"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-          href="/consultant"
+          href="/service/development"
         />
       </div>
     </Section>

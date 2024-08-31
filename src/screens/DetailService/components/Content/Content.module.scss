@@ -1,3 +1,5 @@
+@import '@styles/vars.scss';
+
 .content {
   flex-grow: 1;
 }
@@ -11,6 +13,9 @@
 }
 
 .video {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
   margin-block: 3.5rem;
   width: 100%;
 }
